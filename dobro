@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для входа</title>
+    <style>
+        body {
+            background: #f5f4f3;
+        }
+        form {
+            background: #fff;
+            width: 350px;
+            margin: auto;
+            padding: 30px 50px;
+            box-shadow: 0 0 7px rgba (0, 0, 0, 0.3);
+        }
+        h2 {
+            text-align: center;
+        }
+        .form-control {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid #dddddd;
+        }
+        .remember {
+            text-align: right;
+            font-style: italic;
+        }
+        button {
+background: #bc8e5c;
+width: 100%;
+border: none;
+color: #fff;
+padding: 10px;
+        }
+    </style>
+</head>
+<body>
+   <form action="/example/handler.php">
+    <h2> Добро пожаловать!g</h2>
+    <p><input name="login" placeholder="Логин" class="form-control"></p>
+    <p><input type="password" name="pass" placeholder="Пароль" class="form-control"></p>
+    <p class="remember"><input type="checkbox" checked name="remember"> Запомнить меня</p>
+    <p><button>Войти</button></p>
+</form>
+</body>
+</html>
